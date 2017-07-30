@@ -131,11 +131,35 @@
     <div class="row">
         <div class="col-md-1"></div>
         <div class="col-md-10">
-            <a href="#">API Friends List | </a>
-            <a href="#">GitHub Repo</a>
+            <p><a href="/api/friends">API Friends List</a> | <a href="#">GitHub Repo</a></p>
         </div>
         <div class="col-md-1"></div>
     </div>
 </body>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script type="text/javascript">
+$("#submit").on("click", function() {
+    var scores = [];
+
+    for (i = 1; i < 11; i++) {
+        scores.push( ($("#q" + i).val()))
+    }
+
+    var newFriend = {
+        name: $("#name").val().trim(),
+        photo: $("#photo").val().trim(),
+        scores: scores
+    }
+
+    var currentURL = window.location.origin;
+
+    $.post(currentURL + "/api/friends", newFriend, function(data){
+        alert("ya did it")
+    })
+});
+</script>
 
 </html>

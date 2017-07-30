@@ -23,9 +23,13 @@ module.exports = function(app) {
         for (var i = 0; i < friendsArray.length; i++) {
             for (var j = 0; j < friendsArray[i].scores.length; j++) {
                 difference.push(Math.abs(newFriend.scores[j] - friendsArray[i].scores[j]))
-                differenceSum = difference.reduce(getSum);
-                friendsArray[i].differenceSum = differenceSum
             }
+            console.log(difference);
+            differenceSum = difference.reduce(getSum);
+            console.log(differenceSum);
+            friendsArray[i].diffSum = differenceSum
+            console.log(friendsArray[i].diffSum)
+            difference = [];
         }
 
         // for (var k = 0; k < friendsArray.length; k++) {
@@ -34,13 +38,15 @@ module.exports = function(app) {
 
         // }
 
+        // find friend with least difference
+
         var lowest = Number.POSITIVE_INFINITY;
         var highest = Number.NEGATIVE_INFINITY;
         var tmp;
 
         for (var k = friendsArray.length - 1; k >= 0; k--) {
-            tmp = friendsArray[k].differenceSum;
-            if (tmp < lowest) { 
+            tmp = friendsArray[k].diffSum;
+            if (tmp < lowest) {
                 yourMatch = friendsArray[k];
                 lowest = tmp;
             }
@@ -52,9 +58,9 @@ module.exports = function(app) {
 
         res.json(yourMatch);
 
-        // find friend with least difference
-
         //modal pop up with dude
+
+        // friendsData.push(req.body);
 
 
     })

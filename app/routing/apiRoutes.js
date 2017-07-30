@@ -11,34 +11,18 @@ module.exports = function(app) {
             differenceSum,
             yourMatch;
 
-
         function getSum(total, num) {
             return total + num;
         }
-
-        // friendsData.push(req.body);
-
-        //compare with each friends data
 
         for (var i = 0; i < friendsArray.length; i++) {
             for (var j = 0; j < friendsArray[i].scores.length; j++) {
                 difference.push(Math.abs(newFriend.scores[j] - friendsArray[i].scores[j]))
             }
-            console.log(difference);
             differenceSum = difference.reduce(getSum);
-            console.log(differenceSum);
             friendsArray[i].diffSum = differenceSum
-            console.log(friendsArray[i].diffSum)
             difference = [];
         }
-
-        // for (var k = 0; k < friendsArray.length; k++) {
-
-        //     friendsArray[k].differenceSum
-
-        // }
-
-        // find friend with least difference
 
         var lowest = Number.POSITIVE_INFINITY;
         var highest = Number.NEGATIVE_INFINITY;
@@ -54,14 +38,7 @@ module.exports = function(app) {
             if (tmp > highest) highest = tmp;
         }
 
-        console.log(highest, lowest);
-
         res.json(yourMatch);
-
-        //modal pop up with dude
-
-        // friendsData.push(req.body);
-
-
+        friendsArray.push(req.body);
     })
 }

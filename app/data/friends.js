@@ -5,17 +5,17 @@ var friendsArray = [{
 },
 {
     name: "Giada Da Laurentiis",
-    photo: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    photo: "http://starcasm.net/wp-content/uploads/2015/09/Giada-de-Laurentiis-and-Bobby-Flay-3.png",
     scores: ["2", "2", "2", "2", "2", "2", "2", "2", "2", "2"]
 },
 {
     name: "David Chang",
-    photo: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    photo: "https://timebusinessblog.files.wordpress.com/2013/09/165230118.jpg?w=480&h=320&crop=1",
     scores: ["4", "4", "4", "4", "4", "4", "4", "4", "4", "4"]
 },
 {
     name: "Aziz Ansari",
-    photo: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    photo: "https://s-media-cache-ak0.pinimg.com/736x/7a/7f/90/7a7f90a0f99a665b1aea7c2865ddf019--pisces-love-aziz-ansari.jpg",
     scores: ["5", "5", "5", "5", "5", "5", "5", "5", "5", "5"]
 }];
 

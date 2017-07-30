@@ -157,7 +157,7 @@ $("#submit").on("click", function() {
     var currentURL = window.location.origin;
 
     $.post(currentURL + "/api/friends", newFriend, function(data){
-        alert("ya did it")
+        console.log(data);
     })
 });
 </script>

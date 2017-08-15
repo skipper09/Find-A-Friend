@@ -2,13 +2,13 @@
 
 The Find-A-Friend website allows users to find their foodie soulmate!
 
-[Link to website deployed on Heroku](https://cryptic-coast-92777.herokuapp.com/)
+[Visit the website deployed on Heroku](https://cryptic-coast-92777.herokuapp.com/)
 
 ![Screenshot of home page](http://i301.photobucket.com/albums/nn65/reversethis/Screen%20Shot%202017-08-14%20at%2011.22.37%20PM.png)
 
 Users take a survey over their food ideas and preferences. This is entered into a premade array and compared with other users already in the array. This is displayed to the user as their new B. F. F. (Best Foodie Friend).
 
-The website is made with html, css, javascript, node, express, body parser, uses javascript validation and takes advantage of AJAX calls.
+The website is made with html, css, bootstrap, javascript, node, express, body parser, uses javascript validation and takes advantage of AJAX calls.
 
 ![Screenshot of survey page filled out for user "Sarah"](http://i301.photobucket.com/albums/nn65/reversethis/Screen%20Shot%202017-08-14%20at%2011.25.09%20PM.png)
 
